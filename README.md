@@ -7,21 +7,20 @@ Reading a sensor using ESP8266 and the Raspberry Pi,  RPI receives the data sent
 
 ## Step by step:
 1. You need to create a aws account and set up the "Things" that you will use
- (Just follow the instruction ->https://circuitdigest.com/tutorial/getting-started-with-amazon-aws-for-iot-projects) 
-       
-       a. In the aws Iot you will download the private key, public key and certificate, save this in a safe place. 
+ (Just follow the instruction ->https://circuitdigest.com/tutorial/getting-started-with-amazon-aws-for-iot-projects)  
+   1.1 In the aws Iot you will download the private key, public key and certificate, save this in a safe place. 
 
 2. To connect with the RPI you need to know the ip address, you can use the Wireshark program (using the DHCP filter)
 
 3. Make sure that you and RPI is in the same network 
 
 4. You can connect with the RPI using your linux shell and the ssh command
-         *  $ ssh pi@ipadress
+   4.1 $ ssh pi@ipadress
 
 5. Now you have access to RPI 
 
 6. You need send this to the RPI: privatekey.key, publickey.key, cert.pem and the "aws_server.py"
-          a) To sent something to the RPI you can use this commmand: $ scp filename.py  pi@ipadress:/home/pi
+   6.1 To sent something to the RPI you can use this commmand: $ scp filename.py  pi@ipadress:/home/pi
 
 7. Now you had set up the RPI 
 
@@ -30,7 +29,7 @@ Reading a sensor using ESP8266 and the Raspberry Pi,  RPI receives the data sent
 9. Connect the ESP8266 in you computer, compile the "http_get.c" (don't forget to change the wifi name and password and the ip address in the code)
 
 10. After this, execute the "aws_server.py"
-        a) $ python3 aws_server.py 
+   10.1 $ python3 aws_server.py 
 
 11. You should see the ADC value in the shell
 
