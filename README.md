@@ -8,7 +8,8 @@ Reading a sensor using ESP8266 and the Raspberry Pi,  RPI receives the data sent
 ## Step by step:
 1. You need to create a aws account and set up the "Things" that you will use
  (Just follow the instruction ->https://circuitdigest.com/tutorial/getting-started-with-amazon-aws-for-iot-projects) 
-          1. In the aws Iot you will download the private key, public key and certificate, save this in a safe place. 
+       
+       a. In the aws Iot you will download the private key, public key and certificate, save this in a safe place. 
 
 2. To connect with the RPI you need to know the ip address, you can use the Wireshark program (using the DHCP filter)
 
