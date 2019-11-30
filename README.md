@@ -1,6 +1,8 @@
 # aws_iot_esp8266
 ## Objective:
 Reading a sensor using ESP8266 and the Raspberry Pi,  RPI receives the data sent by the ESP8266 and sends it to the AWS IoT server.
+
+
 ![diagrama](https://user-images.githubusercontent.com/39311424/69901853-d090da00-1365-11ea-8d6d-5d817330874e.png)
 
 ## Step by step:
